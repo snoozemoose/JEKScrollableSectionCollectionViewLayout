@@ -459,7 +459,9 @@ NSString * const JEKCollectionElementKindSectionBackground = @"JEKCollectionElem
     self.scrollView.scrollIndicatorInsets = configuration.scrollIndicatorInsets;
     self.scrollView.indicatorStyle = configuration.indicatorStyle;
     self.scrollView.decelerationRate = configuration.decelerationRate;
+#if !(TARGET_OS_TV)
     self.scrollView.pagingEnabled = configuration.isPagingEnabled;
+#endif
     self.scrollView.scrollEnabled = configuration.isScrollEnabled;
 }
 
@@ -484,6 +486,8 @@ NSString * const JEKCollectionElementKindSectionBackground = @"JEKCollectionElem
     }
     return NO;
 }
+
+- (BOOL)canBecomeFocused { return NO; }
 
 @end
 

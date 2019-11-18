@@ -31,6 +31,7 @@
     self.flowLayoutSectionIndex = 4;
 
     layout.showsSectionBackgrounds = NO; // Set to YES to test background views
+    [self.collectionView registerNib:[UINib nibWithNibName:@"HeaderView" bundle:nil] forSupplementaryViewOfKind:UICollectionElementKindSectionHeader withReuseIdentifier:@"header"];
     [self.collectionView registerClass:[UICollectionReusableView class] forSupplementaryViewOfKind:JEKCollectionElementKindSectionBackground withReuseIdentifier:@"backgroundView"];
 }
 
@@ -41,7 +42,7 @@
     for (NSInteger section = 0; section < 20; section++) {
         NSMutableArray *sectionArray = [NSMutableArray new];
         [sections addObject:sectionArray];
-        NSInteger numberOfItems = 20 + arc4random_uniform(50);
+        NSInteger numberOfItems = 50 + arc4random_uniform(50);
         for (NSInteger item = 0; item < numberOfItems; item++) {
             [sectionArray addObject:@(item)];
         }
@@ -139,6 +140,23 @@
 - (void)collectionView:(UICollectionView *)collectionView didEndDisplayingCell:(UICollectionViewCell *)cell forItemAtIndexPath:(NSIndexPath *)indexPath
 {
     NSLog(@"End displaying cell at %@", indexPath);
+}
+
+- (void)collectionView:(UICollectionView *)collectionView didUpdateFocusInContext:(UICollectionViewFocusUpdateContext *)context withAnimationCoordinator:(UIFocusAnimationCoordinator *)coordinator
+{
+    [coordinator addCoordinatedAnimations:^{
+        // Crudely grab the label
+        UILabel* label = context.nextFocusedView.subviews.firstObject.subviews.firstObject;
+        label.textColor = UIColor.blackColor;
+        NSLog(@"Focus-animated scroll to item no %d!", context.nextFocusedIndexPath.item);
+        [collectionView scrollToItemAtIndexPath:context.nextFocusedIndexPath atScrollPosition:UICollectionViewScrollPositionCenteredHorizontally animated:false];
+    } completion:^{ }];
+
+    [coordinator addCoordinatedUnfocusingAnimations:^(id<UIFocusAnimationContext>  _Nonnull animationContext) {
+        // Crudely grab the label
+        UILabel* label = context.previouslyFocusedView.subviews.firstObject.subviews.firstObject;
+        label.textColor = UIColor.whiteColor;
+    } completion:^{ }];
 }
 
 - (BOOL)shouldUseFlowLayoutInSection:(NSInteger)section

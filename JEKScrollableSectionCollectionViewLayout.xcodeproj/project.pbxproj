@@ -17,6 +17,16 @@
 		5D99484C1F988FCC008DF84C /* ExampleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D99484B1F988FCC008DF84C /* ExampleCell.m */; };
 		5DB90F9621007BB2007A137D /* JEKScrollableSectionCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB90F9521007BB2007A137D /* JEKScrollableSectionCollectionViewLayout.m */; };
 		5DB9F3C421125ECC00FB286C /* JEKScrollableSectionCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB90F9521007BB2007A137D /* JEKScrollableSectionCollectionViewLayout.m */; };
+		89335562237B0E9F00314B54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3B43761F95F614006B8B8E /* main.m */; };
+		89465ABC237B0A9C00042BD9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 89465ABB237B0A9C00042BD9 /* Assets.xcassets */; };
+		89465ABF237B0A9C00042BD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89465ABD237B0A9C00042BD9 /* LaunchScreen.storyboard */; };
+		89A79B1E237B3131002E11C7 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89A79B1D237B3131002E11C7 /* HeaderView.xib */; };
+		89A79B20237B3811002E11C7 /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 89A79B1F237B3811002E11C7 /* HeaderView.xib */; };
+		89B528D4237B0BE900EC5198 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3B43681F95F559006B8B8E /* ViewController.m */; };
+		89B528D5237B0C5900EC5198 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89465AB8237B0A9A00042BD9 /* Main.storyboard */; };
+		89B528D6237B0C6E00EC5198 /* ExampleCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D99484B1F988FCC008DF84C /* ExampleCell.m */; };
+		89B528D7237B0C7A00EC5198 /* JEKScrollableSectionCollectionViewLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 5DB90F9521007BB2007A137D /* JEKScrollableSectionCollectionViewLayout.m */; };
+		89B528D8237B0D8B00EC5198 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D3B435F1F95F558006B8B8E /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +58,13 @@
 		5DB90F9521007BB2007A137D /* JEKScrollableSectionCollectionViewLayout.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JEKScrollableSectionCollectionViewLayout.m; sourceTree = "<group>"; };
 		5DB9F3B921125AAA00FB286C /* Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5DB9F3BD21125AAB00FB286C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89465AB2237B0A9A00042BD9 /* Example project (tvOS).app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Example project (tvOS).app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		89465AB9237B0A9A00042BD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		89465ABB237B0A9C00042BD9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		89465ABE237B0A9C00042BD9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		89465AC0237B0A9C00042BD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		89A79B1D237B3131002E11C7 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		89A79B1F237B3811002E11C7 /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +76,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5DB9F3B621125AAA00FB286C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89465AAF237B0A9A00042BD9 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -79,6 +103,7 @@
 				5D99484B1F988FCC008DF84C /* ExampleCell.m */,
 				5D3B43741F95F614006B8B8E /* Main.storyboard */,
 				5D3B43701F95F614006B8B8E /* Supporting Files */,
+				89A79B1F237B3811002E11C7 /* HeaderView.xib */,
 			);
 			name = "Example Project";
 			sourceTree = "<group>";
@@ -102,6 +127,7 @@
 				5DB90F9521007BB2007A137D /* JEKScrollableSectionCollectionViewLayout.m */,
 				5D0344AC1F543D2B0050DE76 /* Example Project */,
 				5DB9F3BA21125AAB00FB286C /* Tests */,
+				89465AB3237B0A9A00042BD9 /* Example project (tvOS) */,
 				5D8FEDCF1F463D0300857A7E /* Products */,
 			);
 			sourceTree = "<group>";
@@ -111,6 +137,7 @@
 			children = (
 				5D8FEDCE1F463D0300857A7E /* Example Project.app */,
 				5DB9F3B921125AAA00FB286C /* Tests.xctest */,
+				89465AB2237B0A9A00042BD9 /* Example project (tvOS).app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -123,6 +150,18 @@
 				5D256B1C219A0A510054A84A /* Tests-Bridging-Header.h */,
 			);
 			path = Tests;
+			sourceTree = "<group>";
+		};
+		89465AB3237B0A9A00042BD9 /* Example project (tvOS) */ = {
+			isa = PBXGroup;
+			children = (
+				89465AB8237B0A9A00042BD9 /* Main.storyboard */,
+				89465ABB237B0A9C00042BD9 /* Assets.xcassets */,
+				89465ABD237B0A9C00042BD9 /* LaunchScreen.storyboard */,
+				89465AC0237B0A9C00042BD9 /* Info.plist */,
+				89A79B1D237B3131002E11C7 /* HeaderView.xib */,
+			);
+			path = "Example project (tvOS)";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -163,12 +202,30 @@
 			productReference = 5DB9F3B921125AAA00FB286C /* Tests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		89465AB1237B0A9A00042BD9 /* Example project (tvOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 89465AC3237B0A9C00042BD9 /* Build configuration list for PBXNativeTarget "Example project (tvOS)" */;
+			buildPhases = (
+				89465AAE237B0A9A00042BD9 /* Sources */,
+				89465AAF237B0A9A00042BD9 /* Frameworks */,
+				89465AB0237B0A9A00042BD9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Example project (tvOS)";
+			productName = "Example project (tvOS)";
+			productReference = 89465AB2237B0A9A00042BD9 /* Example project (tvOS).app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		5D8FEDC61F463D0300857A7E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 1120;
 				LastUpgradeCheck = 1110;
 				ORGANIZATIONNAME = "Joel Ekström";
 				TargetAttributes = {
@@ -181,6 +238,11 @@
 						CreatedOnToolsVersion = 9.4.1;
 						DevelopmentTeam = 5RNJHF933P;
 						LastSwiftMigration = 1110;
+						ProvisioningStyle = Automatic;
+					};
+					89465AB1237B0A9A00042BD9 = {
+						CreatedOnToolsVersion = 11.2.1;
+						DevelopmentTeam = 5RNJHF933P;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -200,6 +262,7 @@
 			targets = (
 				5D8FEDCD1F463D0300857A7E /* Example Project */,
 				5DB9F3B821125AAA00FB286C /* Tests */,
+				89465AB1237B0A9A00042BD9 /* Example project (tvOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -212,6 +275,7 @@
 				5D3B43801F95F6B7006B8B8E /* LaunchScreen.storyboard in Resources */,
 				5D3B43811F95F6B7006B8B8E /* Main.storyboard in Resources */,
 				5D3B43781F95F614006B8B8E /* Assets.xcassets in Resources */,
+				89A79B20237B3811002E11C7 /* HeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,6 +283,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89465AB0237B0A9A00042BD9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89B528D5237B0C5900EC5198 /* Main.storyboard in Resources */,
+				89465ABF237B0A9C00042BD9 /* LaunchScreen.storyboard in Resources */,
+				89465ABC237B0A9C00042BD9 /* Assets.xcassets in Resources */,
+				89A79B1E237B3131002E11C7 /* HeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +318,18 @@
 			files = (
 				5DB9F3C421125ECC00FB286C /* JEKScrollableSectionCollectionViewLayout.m in Sources */,
 				5D256B1E219A0A510054A84A /* Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		89465AAE237B0A9A00042BD9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89335562237B0E9F00314B54 /* main.m in Sources */,
+				89B528D8237B0D8B00EC5198 /* AppDelegate.m in Sources */,
+				89B528D7237B0C7A00EC5198 /* JEKScrollableSectionCollectionViewLayout.m in Sources */,
+				89B528D4237B0BE900EC5198 /* ViewController.m in Sources */,
+				89B528D6237B0C6E00EC5198 /* ExampleCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,6 +359,22 @@
 			);
 			name = Main.storyboard;
 			path = "Example Project";
+			sourceTree = "<group>";
+		};
+		89465AB8237B0A9A00042BD9 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89465AB9237B0A9A00042BD9 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		89465ABD237B0A9C00042BD9 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				89465ABE237B0A9C00042BD9 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -459,6 +562,52 @@
 			};
 			name = Release;
 		};
+		89465AC1237B0A9C00042BD9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5RNJHF933P;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Example project (tvOS)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ekstrom.JEKScrollableSectionCollectionView.ExampleProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.2;
+			};
+			name = Debug;
+		};
+		89465AC2237B0A9C00042BD9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 5RNJHF933P;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				INFOPLIST_FILE = "Example project (tvOS)/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ekstrom.JEKScrollableSectionCollectionView.ExampleProject;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -485,6 +634,15 @@
 			buildConfigurations = (
 				5DB9F3C021125AAB00FB286C /* Debug */,
 				5DB9F3C121125AAB00FB286C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		89465AC3237B0A9C00042BD9 /* Build configuration list for PBXNativeTarget "Example project (tvOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				89465AC1237B0A9C00042BD9 /* Debug */,
+				89465AC2237B0A9C00042BD9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
